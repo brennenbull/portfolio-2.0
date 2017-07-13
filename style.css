@@ -1,6 +1,7 @@
 /*# sourceMappingURL=style.scss.map */
 @import url("https://fonts.googleapis.com/css?family=Raleway:600");
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif:700i");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Josefin+Sans|Julius+Sans+One|PT+Serif+Caption|Rajdhani|Rock+Salt");
 .c-col {
   display: flex;
   justify-content: center;
@@ -24,7 +25,7 @@
   background-repeat: no-repeat;
   overflow: hidden; }
 
-.plax-text {
+.plax-center {
   height: 200px;
   width: 300px;
   position: absolute;
@@ -43,21 +44,23 @@
   background-image: url(./resources/mountain.jpg); }
   .big .logo {
     height: 200px;
-    width: 400px;
+    width: 100%;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
-    font-family: "Noto Serif", serif;
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
     text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
     .big .logo h1 {
-      font-size: 3em; }
+      margin-top: 3vh;
+      font-size: 6em; }
     .big .logo .line {
       width: 100%;
       height: 1px;
-      border: 1px solid black;
+      border: 1px solid white;
       box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
 
 .content {
@@ -65,9 +68,11 @@
   padding-right: 10vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  text-align: center; }
+  text-align: center;
+  height: 95vh; }
 
 .projects {
+  font-family: "Josefin Sans", sans-serif;
   text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
   .projects p {
     margin-top: 5vh;
@@ -81,10 +86,11 @@
   .projects .project-gal {
     width: 100%; }
     .projects .project-gal .row-of3 {
-      justify-content: space-between; }
+      width: 70%;
+      justify-content: space-around; }
       .projects .project-gal .row-of3 .filler {
         height: 200px;
-        width: 150px;
+        width: 300px;
         background: lightpink;
         margin: 10px;
         position: relative;
@@ -98,18 +104,36 @@
 .mid {
   position: relative;
   height: 500px;
-  background-image: url(./resources/oregon.jpg); }
+  background-image: url(./resources/oregon.jpg);
+  padding-bottom: 2vh; }
   .mid .font {
-    font-family: "Noto Serif", serif;
+    font-family: "Josefin Sans", sans-serif;
+    width: 80%;
+    color: white;
     text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
-    .mid .font h1 {
-      font-size: 3em; }
+    .mid .font .skills {
+      overflow: scroll;
+      height: 300px;
+      width: 50%;
+      margin-right: 10vw; }
+      .mid .font .skills h1 {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        font-size: 2.5em; }
+
+.big-fill {
+  height: 300px;
+  width: 300px;
+  background: lightpink;
+  border-radius: 5%; }
 
 .about div {
   margin-left: 1vw;
   margin-right: 1vw;
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.2); }
   .about div h1 {
+    font-family: "Josefin Sans", sans-serif;
     text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
 .about .mid-line {
   position: relative;
@@ -117,5 +141,39 @@
   width: 100%;
   border: 1px solid black;
   box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+.about .css-gal .big-fill {
+  height: 70vh;
+  width: 70vh; }
+.about .css-gal a {
+  margin-left: -3vw;
+  margin-right: -3vw; }
+.about .css-gal .arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0px 15px 25px;
+  border-color: transparent transparent transparent #aaaaaa; }
+  .about .css-gal .arrow.left {
+    transform: rotateZ(180deg); }
+
+.footer {
+  position: relative;
+  background-image: url(./resources/boone.jpg);
+  height: 500px; }
+  .footer .font {
+    font-family: "Josefin Sans", sans-serif;
+    width: 80%;
+    color: white;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+    .footer .font .background {
+      overflow: scroll;
+      height: 300px;
+      width: 50%;
+      margin-left: 15vw; }
+      .footer .font .background h1 {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        font-size: 2.5em; }
 
 /*# sourceMappingURL=style.css.map */

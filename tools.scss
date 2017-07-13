@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:600');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif:700i');
 
-$plax-font: 'Noto Serif', serif;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Josefin+Sans|Julius+Sans+One|PT+Serif+Caption|Rajdhani|Rock+Salt');
+
+$plax-font: 'Josefin Sans', sans-serif;;
 
 .c-col{
   display: flex;
@@ -30,7 +33,7 @@ $plax-font: 'Noto Serif', serif;
   overflow: hidden;
 }
 
-.plax-text{
+.plax-center{
   height: 200px;
   width: 300px;
   position: absolute;

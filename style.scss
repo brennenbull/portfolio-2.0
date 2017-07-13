@@ -11,22 +11,24 @@
   background-image: url(./resources/mountain.jpg);
   .logo{
     height: 200px;
-    width: 400px;
+    width: 100%;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
-    font-family: $plax-font;
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
     text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
     h1{
-      font-size: 3em;
+      margin-top: 3vh;
+      font-size: 6em;
     }
     .line{
       width: 100%;
       height: 1px;
-      border: 1px solid black;
+      border: 1px solid white;
       box-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
     }
 
@@ -38,8 +40,10 @@
   margin-top: 5vh;
   margin-bottom: 5vh;
   text-align: center;
+  height: 95vh;
 }
 .projects{
+  font-family: $plax-font;
   text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
   p{
     margin-top: 5vh;
@@ -55,10 +59,11 @@
   .project-gal{
     width: 100%;
     .row-of3{
-      justify-content: space-between;
+      width: 70%;
+      justify-content: space-around;
       .filler{
         height: 200px;
-        width: 150px;
+        width: 300px;
         background: lightpink;
         margin: 10px;
         position: relative;
@@ -79,13 +84,32 @@
   position: relative;
   height: 500px;
   background-image: url(./resources/oregon.jpg);
+  padding-bottom: 2vh;
   .font{
     font-family: $plax-font;
+    width: 80%;
+    color: white;
     text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
-    h1{
-      font-size: 3em;
+    .skills{
+      overflow: scroll;
+      height: 300px;
+      width: 50%;
+      margin-right: 10vw;
+      h1{
+        display: inline-block;
+        position: relative;
+        top: 0;
+        font-size: 2.5em;
+      }
     }
   }
+}
+
+.big-fill{
+  height: 300px;
+  width: 300px;
+  background: lightpink;
+  border-radius: 5%;
 }
 
 .about{
@@ -94,6 +118,7 @@
     margin-right: 1vw;
     text-shadow: 2px 2px 2px rgba(150, 150, 150, .2);
     h1{
+      font-family: $plax-font;
       text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
     }
   }
@@ -103,5 +128,50 @@
     width: 100%;
     border: 1px solid black;
     box-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+  }
+  .css-gal{
+    .big-fill{
+      height: 70vh;
+      width: 70vh;
+    }
+    a{
+      margin-left: -3vw;
+      margin-right: -3vw;
+    }
+    .arrow{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 0px 15px 25px;
+      border-color: transparent transparent transparent #aaaaaa;
+      &.left{
+        transform: rotateZ(180deg);
+      }
+    }
+
+  }
+}
+
+.footer{
+  position: relative;
+  background-image: url(./resources/boone.jpg);
+  height: 500px;
+  .font{
+    font-family: $plax-font;
+    width: 80%;
+    color: white;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+    .background{
+      overflow: scroll;
+      height: 300px;
+      width: 50%;
+      margin-left: 15vw;
+      h1{
+        display: inline-block;
+        position: relative;
+        top: 0;
+        font-size: 2.5em;
+      }
+    }
   }
 }
