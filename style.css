@@ -1,0 +1,121 @@
+/*# sourceMappingURL=style.scss.map */
+@import url("https://fonts.googleapis.com/css?family=Raleway:600");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:700i");
+.c-col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.c-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center; }
+
+.s-pad {
+  padding-left: 3vw;
+  padding-right: 3vw; }
+
+.plax {
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+
+.plax-text {
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+* {
+  font-family: 'Raleway', sans-serif; }
+
+.big {
+  position: relative;
+  height: 500px;
+  background-image: url(./resources/new-mexico.jpg); }
+  .big .logo {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-family: "Noto Serif", serif;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+    .big .logo h1 {
+      font-size: 3em; }
+    .big .logo .line {
+      width: 100%;
+      height: 1px;
+      border: 1px solid black;
+      box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+
+.content {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center; }
+
+.projects {
+  text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+  .projects p {
+    margin-top: 5vh;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.2); }
+  .projects .big-line {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+  .projects .project-gal {
+    width: 100%; }
+    .projects .project-gal .row-of3 {
+      justify-content: space-between; }
+      .projects .project-gal .row-of3 .filler {
+        height: 200px;
+        width: 150px;
+        background: lightpink;
+        margin: 10px;
+        position: relative;
+        opacity: 0;
+        transform: translate(50px, 50px);
+        transition: all 0.4s ease-in-out; }
+        .projects .project-gal .row-of3 .filler.is-showing {
+          opacity: 1;
+          transform: translate(0px, 0px); }
+
+.mid {
+  position: relative;
+  height: 500px;
+  background-image: url(./resources/oregon.jpg); }
+  .mid .font {
+    font-family: "Noto Serif", serif;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+    .mid .font h1 {
+      font-size: 3em; }
+
+.about div {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.2); }
+  .about div h1 {
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+.about .mid-line {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid black;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+
+/*# sourceMappingURL=style.css.map */
