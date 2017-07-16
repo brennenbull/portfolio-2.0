@@ -1,0 +1,55 @@
+.poster-star{
+  position: relative;
+  bottom: 25%;
+  transform: scale(0.5);
+  height: 720px;
+  width: 500px;
+  background: #1a1a1a;
+  overflow: hidden;
+  .triangles{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 240px 251px 0px 251px;
+    border-color: #aaaaaa transparent transparent transparent;
+  }
+  .death-star{
+    position: absolute;
+    top: 297px;
+    width: 200px;
+    height: 200px;
+    background: #aaaaaa;
+    border-radius: 100%;
+  }
+  .death-star::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 113px;
+    margin: auto;
+    width: 22%;
+    height: 22%;
+    background: #282828;
+    border-radius: 100%;
+  }
+  .lucas{
+    position: absolute;
+    bottom: 56px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .cover{
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 75%;
+    background: rgba(26, 26, 26, .5);
+  }
+}

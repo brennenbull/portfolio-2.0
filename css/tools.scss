@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:600');
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Josefin+Sans|Julius+Sans+One|PT+Serif+Caption|Rajdhani|Rock+Salt');
+
+$plax-font: 'Josefin Sans', sans-serif;;
+
+.c-col{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-row{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.s-pad{
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.plax{
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.plax-center{
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}

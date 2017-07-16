@@ -1,0 +1,231 @@
+/*# sourceMappingURL=style.scss.map */
+@import 'tools';
+@import "blade-runner";
+@import "star-wars";
+@import "super";
+
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+.big{
+  position: relative;
+  height: 600px;
+  background-image: url(../resources/mountain.jpg);
+  .logo{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+    h1{
+      margin-top: 3vh;
+      font-size: 6em;
+    }
+    .line{
+      width: 100%;
+      height: 1px;
+      border: 1px solid white;
+      box-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+    }
+
+  }
+}
+.content{
+  padding-left:10vw;
+  padding-right: 10vw;
+  text-align: center;
+  height: 850px;
+  box-shadow: inset 0px 0px 30px 2px rgba(50, 50, 50, 0.75);
+}
+
+.projects{
+  font-family: $plax-font;
+  text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+  p{
+    margin-top: 5vh;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, .2);
+  }
+  .big-line{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+  }
+  .project-gal{
+    width: 100%;
+    .row-of3{
+      width: 70%;
+      justify-content: space-around;
+      .filler{
+        height: 200px;
+        width: 300px;
+        background-size: 100% 100%;
+        border-radius: 5%;
+        margin: 10px;
+        position: relative;
+        opacity: 0;
+        transform: translate(50px, 50px);
+        transition: all 0.4s ease-in-out;
+
+        &.is-showing{
+          opacity: 1;
+          transform: translate(0px, 0px);
+        }
+      }
+    }
+  }
+}
+
+.mid{
+  position: relative;
+  height: 600px;
+  background-image: url(../resources/oregon.jpg);
+  padding-bottom: 2vh;
+  overflow: hidden;
+  .font{
+    font-family: $plax-font;
+    width: 80%;
+    color: white;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+    .skills{
+      overflow: scroll;
+      height: 300px;
+      width: 50%;
+      margin-right: 10vw;
+      transform: translateX(-1000px);
+      h1{
+        display: inline-block;
+        position: relative;
+        top: 0;
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+
+
+.skills-img, .back-img, .skills{
+  position: relative;
+}
+
+.skills-img{
+  height: 300px;
+  width: 300px;
+  background: lightpink;
+  border-radius: 5%;
+  transform: translateX(-1000px);
+}
+.back-img{
+  height: 300px;
+  width: 300px;
+  background: lightpink;
+  border-radius: 5%;
+  transform: translateX(-1000px);
+}
+
+.css{
+  padding-top: 1vh;
+  height: 900px;
+  div{
+    h1{
+      font-family: $plax-font;
+      text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+    }
+    p{
+      margin-top: 5vh;
+      text-shadow: 2px 2px 2px rgba(150, 150, 150, .2);
+    }
+  }
+  .mid-line{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+  }
+  .css-gal{
+    margin-bottom: 1vh;
+    .carousel-item {
+      margin: 0;
+      height:470px;
+      width: 570px;
+      padding: 0px 10px;
+    }
+    .big-fill{
+      height:470px;
+      width: 570px;
+      background-color: lightpink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    a{
+      margin-left: -3vw;
+      margin-right: -3vw;
+    }
+    .arrow{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 0px 15px 25px;
+      border-color: transparent transparent transparent #aaaaaa;
+      &.left{
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+}
+
+.footer{
+  position: relative;
+  background-image: url(../resources/boone.jpg);
+  height: 600px;
+  .font{
+    font-family: $plax-font;
+    width: 80%;
+    height: 400px;
+    color: white;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+    .background{
+      padding-top: 40px;
+      overflow: scroll;
+      height: 400px;
+      width: 50%;
+      margin-left: 15vw;
+      transform: translateX(1000px);
+      h1{
+        display: inline-block;
+        position: relative;
+        top: 0;
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+
+.find-me{
+  width: 100%;
+  height: 50px;
+  background: white;
+  border-top: 1px solid black;
+  box-shadow: inset 0px 7px 25px 0px rgba(50, 50, 50, 0.75);
+}
+
+@media (max-width: 1000px) {
+  .background{
+    transform: translate(0px, 0px) !important;
+  }
+
+  .back-img{
+    transform: translate(0px, 0px) !important;
+  }
+}

@@ -1,0 +1,394 @@
+/*# sourceMappingURL=style.scss.map */
+@import url("https://fonts.googleapis.com/css?family=Raleway:600");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Josefin+Sans|Julius+Sans+One|PT+Serif+Caption|Rajdhani|Rock+Salt");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:800|Kanit:900|Libre+Franklin:300,900|Muli:900");
+.c-col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.c-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center; }
+
+.s-pad {
+  padding-left: 3vw;
+  padding-right: 3vw; }
+
+.plax {
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+
+.plax-center {
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.poster {
+  position: relative;
+  bottom: 25%;
+  transform: scale(0.6);
+  background: #37212E;
+  width: 530px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  filter: blur(0.5px) saturate(65%); }
+  .poster .dots {
+    margin-top: 10px;
+    width: 92%;
+    height: 84%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden; }
+    .poster .dots .dot-1 {
+      margin: 3px;
+      height: 12px;
+      width: 12px;
+      border-radius: 100%;
+      background-color: #8DCDF8; }
+    .poster .dots .dot {
+      margin: 3px;
+      height: 12px;
+      width: 12px;
+      border-radius: 100%;
+      background-color: #8DCDF8; }
+  .poster .footer-text {
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-bottom: 15px; }
+    .poster .footer-text h1 {
+      font-family: 'Muli', sans-serif;
+      margin-bottom: 0px; }
+    .poster .footer-text p {
+      font-size: .5em;
+      font-weight: 300;
+      margin-top: 0px; }
+
+.white-dot {
+  background-color: white;
+  margin: 3px;
+  height: 12px;
+  width: 12px;
+  border-radius: 100%; }
+  .white-dot::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -24.5px;
+    left: 50%;
+    margin-left: -12.5px;
+    border-style: solid;
+    border-width: 0 6px 7.5px 6px;
+    border-color: transparent transparent #ffffff transparent; }
+
+.poster-star {
+  position: relative;
+  bottom: 25%;
+  transform: scale(0.5);
+  height: 720px;
+  width: 500px;
+  background: #1a1a1a;
+  overflow: hidden; }
+  .poster-star .triangles {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 240px 251px 0px 251px;
+    border-color: #aaaaaa transparent transparent transparent; }
+  .poster-star .death-star {
+    position: absolute;
+    top: 297px;
+    width: 200px;
+    height: 200px;
+    background: #aaaaaa;
+    border-radius: 100%; }
+  .poster-star .death-star::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 113px;
+    margin: auto;
+    width: 22%;
+    height: 22%;
+    background: #282828;
+    border-radius: 100%; }
+  .poster-star .lucas {
+    position: absolute;
+    bottom: 56px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif; }
+  .poster-star .cover {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 75%;
+    background: rgba(26, 26, 26, 0.5); }
+
+.poster-container {
+  transform: scale(0.5);
+  margin: -89px 0px 0px -118px;
+  width: 840px;
+  height: 640px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .poster-container .poster-super {
+    height: 100%;
+    width: 49.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .poster-container .left {
+    background: #0069BB; }
+    .poster-container .left .logo-left {
+      margin-top: 0%;
+      height: 70%;
+      width: 8px;
+      background: linear-gradient(to bottom, #fc0000 0%, rgba(234, 234, 234, 0) 100%);
+      transform: rotateZ(45deg); }
+    .poster-container .left .text {
+      padding-top: 7%;
+      margin-top: 3%; }
+  .poster-container .poster-pulp {
+    height: 100%;
+    width: 49.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .poster-container .poster-pulp.right {
+      background: #E2010D; }
+      .poster-container .poster-pulp.right .logo-right {
+        margin-top: 10%;
+        height: 50%;
+        width: 8px;
+        background: white; }
+      .poster-container .poster-pulp.right .text {
+        padding-top: 7.3%;
+        margin-top: 17%; }
+
+.text {
+  font-family: sans-serif;
+  font-size: .5rem;
+  text-align: center;
+  width: 40%;
+  color: yellow; }
+  .text h4 {
+    letter-spacing: .5rem; }
+
+* {
+  font-family: 'Raleway', sans-serif; }
+
+.big {
+  position: relative;
+  height: 600px;
+  background-image: url(../resources/mountain.jpg); }
+  .big .logo {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+    .big .logo h1 {
+      margin-top: 3vh;
+      font-size: 6em; }
+    .big .logo .line {
+      width: 100%;
+      height: 1px;
+      border: 1px solid white;
+      box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+
+.content {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  text-align: center;
+  height: 850px;
+  box-shadow: inset 0px 0px 30px 2px rgba(50, 50, 50, 0.75); }
+
+.projects {
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+  .projects p {
+    margin-top: 5vh;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.2); }
+  .projects .big-line {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+  .projects .project-gal {
+    width: 100%; }
+    .projects .project-gal .row-of3 {
+      width: 70%;
+      justify-content: space-around; }
+      .projects .project-gal .row-of3 .filler {
+        height: 200px;
+        width: 300px;
+        background-size: 100% 100%;
+        border-radius: 5%;
+        margin: 10px;
+        position: relative;
+        opacity: 0;
+        transform: translate(50px, 50px);
+        transition: all 0.4s ease-in-out; }
+        .projects .project-gal .row-of3 .filler.is-showing {
+          opacity: 1;
+          transform: translate(0px, 0px); }
+
+.mid {
+  position: relative;
+  height: 600px;
+  background-image: url(../resources/oregon.jpg);
+  padding-bottom: 2vh;
+  overflow: hidden; }
+  .mid .font {
+    font-family: "Josefin Sans", sans-serif;
+    width: 80%;
+    color: white;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+    .mid .font .skills {
+      overflow: scroll;
+      height: 300px;
+      width: 50%;
+      margin-right: 10vw;
+      transform: translateX(-1000px); }
+      .mid .font .skills h1 {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        font-size: 2.5em; }
+
+.skills-img, .back-img, .skills {
+  position: relative; }
+
+.skills-img {
+  height: 300px;
+  width: 300px;
+  background: lightpink;
+  border-radius: 5%;
+  transform: translateX(-1000px); }
+
+.back-img {
+  height: 300px;
+  width: 300px;
+  background: lightpink;
+  border-radius: 5%;
+  transform: translateX(-1000px); }
+
+.css {
+  padding-top: 1vh;
+  height: 900px; }
+  .css div h1 {
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+  .css div p {
+    margin-top: 5vh;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.2); }
+  .css .mid-line {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+  .css .css-gal {
+    margin-bottom: 1vh; }
+    .css .css-gal .carousel-item {
+      margin: 0;
+      height: 470px;
+      width: 570px;
+      padding: 0px 10px; }
+    .css .css-gal .big-fill {
+      height: 470px;
+      width: 570px;
+      background-color: lightpink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .css .css-gal a {
+      margin-left: -3vw;
+      margin-right: -3vw; }
+    .css .css-gal .arrow {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 0px 15px 25px;
+      border-color: transparent transparent transparent #aaaaaa; }
+      .css .css-gal .arrow.left {
+        transform: rotateZ(180deg); }
+
+.footer {
+  position: relative;
+  background-image: url(../resources/boone.jpg);
+  height: 600px; }
+  .footer .font {
+    font-family: "Josefin Sans", sans-serif;
+    width: 80%;
+    height: 400px;
+    color: white;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5); }
+    .footer .font .background {
+      padding-top: 40px;
+      overflow: scroll;
+      height: 400px;
+      width: 50%;
+      margin-left: 15vw;
+      transform: translateX(1000px); }
+      .footer .font .background h1 {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        font-size: 2.5em; }
+
+.find-me {
+  width: 100%;
+  height: 50px;
+  background: white;
+  border-top: 1px solid black;
+  box-shadow: inset 0px 7px 25px 0px rgba(50, 50, 50, 0.75); }
+
+@media (max-width: 1000px) {
+  .background {
+    transform: translate(0px, 0px) !important; }
+
+  .back-img {
+    transform: translate(0px, 0px) !important; } }
+
+/*# sourceMappingURL=style.css.map */
