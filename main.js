@@ -36,6 +36,5 @@ $(window).scroll(function(){
 });
 
 $('.carousel').carousel({
-  interval: false,
-  ride: true
-});
+  interval: 2000
+})
