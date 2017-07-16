@@ -1,8 +1,6 @@
-/*# sourceMappingURL=style.scss.map */
 @import url("https://fonts.googleapis.com/css?family=Raleway:600");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Josefin+Sans|Julius+Sans+One|PT+Serif+Caption|Rajdhani|Rock+Salt");
-@import url("https://fonts.googleapis.com/css?family=Exo+2:800|Kanit:900|Libre+Franklin:300,900|Muli:900");
 .c-col {
   display: flex;
   justify-content: center;
@@ -35,68 +33,6 @@
   top: 0;
   bottom: 0;
   margin: auto; }
-
-.poster {
-  position: relative;
-  bottom: 25%;
-  transform: scale(0.6);
-  background: #37212E;
-  width: 530px;
-  height: 750px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  filter: blur(0.5px) saturate(65%); }
-  .poster .dots {
-    margin-top: 10px;
-    width: 92%;
-    height: 84%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden; }
-    .poster .dots .dot-1 {
-      margin: 3px;
-      height: 12px;
-      width: 12px;
-      border-radius: 100%;
-      background-color: #8DCDF8; }
-    .poster .dots .dot {
-      margin: 3px;
-      height: 12px;
-      width: 12px;
-      border-radius: 100%;
-      background-color: #8DCDF8; }
-  .poster .footer-text {
-    color: white;
-    font-family: 'Libre Franklin', sans-serif;
-    margin-bottom: 15px; }
-    .poster .footer-text h1 {
-      font-family: 'Muli', sans-serif;
-      margin-bottom: 0px; }
-    .poster .footer-text p {
-      font-size: .5em;
-      font-weight: 300;
-      margin-top: 0px; }
-
-.white-dot {
-  background-color: white;
-  margin: 3px;
-  height: 12px;
-  width: 12px;
-  border-radius: 100%; }
-  .white-dot::after {
-    content: '';
-    width: 0;
-    height: 0;
-    position: relative;
-    top: -24.5px;
-    left: 50%;
-    margin-left: -12.5px;
-    border-style: solid;
-    border-width: 0 6px 7.5px 6px;
-    border-color: transparent transparent #ffffff transparent; }
 
 .poster-star {
   position: relative;
@@ -294,6 +230,17 @@
         position: relative;
         top: 0;
         font-size: 2.5em; }
+    .mid .font .skills-img div {
+      width: 100%;
+      height: 100%; }
+    .mid .font .skills-img .skill-img {
+      background-size: 100% 100%;
+      float: left;
+      position: relative;
+      display: inline-block;
+      width: 25%;
+      height: 25%;
+      margin: 5%; }
 
 .skills-img, .back-img, .skills {
   position: relative; }
@@ -301,7 +248,6 @@
 .skills-img {
   height: 300px;
   width: 300px;
-  background: lightpink;
   border-radius: 5%;
   transform: translateX(-1000px); }
 
@@ -334,14 +280,9 @@
       height: 470px;
       width: 570px;
       padding: 0px 10px; }
-    .css .css-gal .big-fill {
-      height: 470px;
-      width: 570px;
-      background-color: lightpink;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+      .css .css-gal .carousel-item img {
+        height: 100%;
+        margin-left: 20%; }
     .css .css-gal a {
       margin-left: -3vw;
       margin-right: -3vw; }
@@ -376,6 +317,13 @@
         position: relative;
         top: 0;
         font-size: 2.5em; }
+    .footer .font .back-img img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      transform: rotateZ(90deg);
+      border-radius: 5%;
+      border: 3px solid white; }
 
 .find-me {
   width: 100%;

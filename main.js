@@ -1,16 +1,3 @@
-$(document).ready(function(){
-  loadDots();
-})
-
-
-function loadDots(){
-  for (var i = 0; i < 1500; i++) {
-    $('.dot-1').clone().addClass('dot').attr('id',`${i}`).removeClass('dot-1').appendTo('.dots');
-  }
-  $('#282').removeClass('dot').addClass('white-dot')
-  $('#336').removeClass('dot').addClass('white-dot')
-  $('#390').removeClass('dot').addClass('white-dot')
-}
 
 $(window).scroll(function(){
   let dist = $(this).scrollTop();
