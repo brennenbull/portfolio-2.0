@@ -1,8 +1,6 @@
 
-
 @import 'tools';
-@import "star-wars";
-@import "super";
+
 
 *{
   font-family: 'Raleway', sans-serif;
@@ -171,10 +169,19 @@
       margin: 0;
       height:470px;
       width: 570px;
-      padding: 0px 10px;
-      img{
+      .c{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .b-runner{
         height: 100%;
-        margin-left: 20%;
+      }
+      .super{
+        height: 90%;
       }
     }
 
