@@ -1,8 +1,6 @@
 
 $(window).scroll(function(){
   let dist = $(this).scrollTop();
-
-  console.log($(window).width());
   if(dist <= 60){
     $('.filler').removeClass('is-showing');
   }
@@ -34,8 +32,3 @@ $(window).scroll(function(){
   }
 
 });
-
-$('.carousel').carousel({
-  ride:true,
-  interval: false
-})

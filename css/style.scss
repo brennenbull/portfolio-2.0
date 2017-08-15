@@ -5,7 +5,42 @@
 *{
   font-family: 'Raleway', sans-serif;
 }
-
+nav{
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: $plax-font;
+  h5{
+    margin-bottom: 0;
+    margin-left: 5px;
+    text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
+  }
+  .social-links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .link{
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to right, #c21500, #ffc500 50%);
+	    background-size: 200% 100%;
+	    background-position-x: 100%;
+      font-size: 1.2em;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-decoration: none;
+      &:hover{
+        transition: all 900ms cubic-bezier(0.000, 0.000, 0.230, 1);
+        background-position-x: 0%;
+      }
+    }
+  }
+}
 .big{
   position: relative;
   height: 600px;
@@ -94,7 +129,7 @@
     color: white;
     text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
     .skills{
-      overflow: scroll;
+      overflow: visible;
       height: 300px;
       width: 50%;
       margin-right: 10vw;
@@ -138,7 +173,6 @@
 .back-img{
   height: 300px;
   width: 300px;
-  background: lightpink;
   border-radius: 5%;
   transform: translateX(-1000px);
 }
@@ -214,7 +248,7 @@
     text-shadow: 3px 6px 10px rgba(0, 0, 0, .5);
     .background{
       padding-top: 40px;
-      overflow: scroll;
+      overflow: visible;
       height: 400px;
       width: 50%;
       margin-left: 15vw;
