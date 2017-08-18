@@ -277,7 +277,26 @@ nav{
   background: white;
   border-top: 1px solid black;
   box-shadow: inset 0px 7px 25px 0px rgba(50, 50, 50, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .link{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #c21500, #ffc500 50%);
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    font-size: 1.2em;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    &:hover{
+      transition: all 900ms cubic-bezier(0.000, 0.000, 0.230, 1);
+      background-position-x: 0%;
+    }
+  }
 }
+
 
 @media (max-width: 1000px) {
   .background{
